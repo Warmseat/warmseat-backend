@@ -14,6 +14,8 @@ Conversation Chat Agent
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Trello](#project-management-tool)
+    - [Wireframe](#wireframe)
+    - [Domain Model](#domain-model)
 
 3. [Group Members](#group-members)
 
@@ -76,6 +78,14 @@ Conversation Chat Agent
 
 - Trello:
     <https://trello.com/b/VMaHVS8C/project-management>
+
+### Wireframe
+
+![Warmseat Wireframe](assets/warmseatWF.png)
+
+### Domain Model
+
+![Warmseat Domain Model](assets/warmseatDM.png)
 
 ## Group Members
 
