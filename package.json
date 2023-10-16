@@ -1,0 +1,22 @@
+{
+  "name": "warmseat-backend",
+  "version": "1.0.0",
+  "description": "Warmseat is a platform for seamlessly querying video transcripts, enhancing the way users access and interact with video content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Warmseat/warmseat-backend.git"
+  },
+  "author": "Paul Brown, Samaad Turner, and Sydney Mae Pagalan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Warmseat/warmseat-backend/issues"
+  },
+  "homepage": "https://github.com/Warmseat/warmseat-backend#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
