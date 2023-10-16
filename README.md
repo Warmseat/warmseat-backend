@@ -14,7 +14,8 @@ Conversation Chat Agent
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Trello](#project-management-tool)
-    - [Domain Model]()
+    - [Wireframe](#wireframe)
+    - [Domain Model](#domain-model)
 
 3. [Group Members](#group-members)
 
