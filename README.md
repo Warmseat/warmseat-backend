@@ -2,6 +2,35 @@
 
 Conversation Chat Agent
 
+## Table of Contents
+
+1. Project Overview
+
+    - [Features](#features)
+    - [Technology & Language](#technologies-used)
+
+2. Getting Started
+
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Trello](#project-management-tool)
+
+3. [Group Members](#group-members)
+
+4. [Cooperation Plan](#cooperation-plan)
+
+5. [Conflict Plan](#conflict-plan)
+
+6. [Communication Plan](#communication-plan)
+
+7. [Work Plan](#work-plan)
+
+8. [Git Process](#git-process)
+
+9. [License](#license)
+
+<!-- 10. []() -->
+
 ## Project Overview
 
 - This project aims to create a platform where users can save YouTube video URLs and query video transcripts. Built using a React frontend and a Node.js backend, the application offers features like saving video URLs, querying saved video transcripts, and receiving notifications for new transcripts.
