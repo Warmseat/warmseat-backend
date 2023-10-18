@@ -1,6 +1,9 @@
 {
   "name": "warmseat-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "description": "Warmseat is a platform for seamlessly querying video transcripts, enhancing the way users access and interact with video content.",
   "main": "index.js",
   "scripts": {
