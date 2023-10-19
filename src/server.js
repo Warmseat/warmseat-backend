@@ -1,6 +1,16 @@
 'use strict';
 
-const versionNumber = 'v0.9.1';
+const versionNumber = 'v0.9.9';
+
+// const CognitoExpress = require("cognito-express");
+
+// const cognitoExpress = new CognitoExpress({
+// 	region: "us-west-2",
+// 	cognitoUserPoolId: "us-west-2_f4IUtL299",
+// 	tokenUse: "access",
+// 	tokenExpiration: 3600000
+// });
+
 
 const express = require('express');
 const cors = require('cors');
@@ -10,6 +20,17 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 // app.use(authorize);
+// app.use(function(req, res, next) {
+// 	let accessTokenFromClient = req.headers.accesstoken;
+// 	if (!accessTokenFromClient) return res.status(401).send("Access Token missing from header");
+
+// 	cognitoExpress.validate(accessTokenFromClient, function(err, response) {
+// 		if (err) return res.status(401).send(err);
+// 		res.locals.user = response;
+// 		next();
+// 	});
+// });
+
 
 const logger = require('./middleware/logger.js');
 const validator = require('./middleware/validator.js')
