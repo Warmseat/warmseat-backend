@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Warmseat/warmseat-backend#readme",
   "dependencies": {
     "aws-sdk": "^2.1476.0",
+    "cognito-express": "^3.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
