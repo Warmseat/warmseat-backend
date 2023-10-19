@@ -48,7 +48,7 @@ module.exports = {
   app,
   start: (port) => {
     app.listen(port, () => {
-      console.log('Server is running!' + port);
+      console.log('Server is running ' + versionNumber + ' on ' + port);
     });
   }
 };

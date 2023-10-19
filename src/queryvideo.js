@@ -1,31 +1,39 @@
-const dotenv = require('dotenv');
+'use strict';
+
+require('dotenv').config();
+const saveData = require('./dynamoDB.js'); 
+
 const YoutubeLoader = require("langchain/document_loaders/web/youtube").YoutubeLoader;
 const OpenAIEmbeddings = require("langchain/embeddings/openai").OpenAIEmbeddings;
-// const FaissStore = require("langchain/vectorstores/faiss").FaissStore;
 const RecursiveCharacterTextSplitter = require("langchain/text_splitter").RecursiveCharacterTextSplitter;
 const RetrievalQAChain = require("langchain/chains").RetrievalQAChain;
 const ChatOpenAI = require("langchain/chat_models/openai").ChatOpenAI;
 const MemoryVectorStore = require("langchain/vectorstores/memory").MemoryVectorStore;
 
-// const Document = require("langchain/document").Document;
-dotenv.config();
+
+function youtubeLinkHandler (youtubeURL) {
+  // Extract video id from the URL
+  let videoId = youtubeURL.split('v=')[1];
+  console.log('sgsfsdfsdf', youtubeURL);
+  let ampersandPosition = videoId.indexOf('&');
+  if(ampersandPosition != -1) {
+    videoId = videoId.substring(0, ampersandPosition);
+  }
+  const answer = `https://www.youtube.com/watch?v=${videoId}`;
+  console.log(answer);
+  // return answer;
+}
 
 async function handleQuery (queryObject){
-  // console.log('queryVideo: ', versionNumber);
-  // console.log('heres the data!: ', queryObject);
-
-  let youtubeURL = queryObject.youtubeURL;
-  let userQuery = queryObject.query;
-  let versionNumber = queryObject.versionNumber;
+  // let youtubeURL = youtubeLinkHandler(queryObject.youtubeURL);
+  // console.log('youtubeURL', youtubeURL);
+  const youtubeURL = queryObject.youtubeURL;
+  const userQuery = queryObject.query;
+  const versionNumber = queryObject.versionNumber;
   
-//  console.log('youtubeURL: ', youtubeURL + '. userQuery: ', userQuery);
-
-
-  // test idea: if the youtube video does not support transcript, then return a message saying so
-  // try catch block begin
   const loader = YoutubeLoader.createFromUrl(youtubeURL, {
-  language: "en",
-  addVideoInfo: false,
+    language: "en",
+    addVideoInfo: false,
   });
 
   // // Load the data  
@@ -51,16 +59,14 @@ async function handleQuery (queryObject){
     query: userQuery,
   });
 
-
   const response = {
-    // statusCode: 200,
-    // body: JSON.stringify('Answer ', queryResponse),
     body: queryResponse.text,
     versionNumber: versionNumber,
-    // answer: queryResponse.text
-    // body: JSON.stringify('URL: ' + youtubeURL + '. Query: ' + userQuery),
   };
-  console.log(response);
+
+  const email = 'fan3@sugaraspa.com'; 
+  await saveData(email, youtubeURL, userQuery, queryResponse.text); 
+
   return response;
 };
 
