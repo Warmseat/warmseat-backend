@@ -14,6 +14,10 @@ Conversation Chat Agent
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
     - [Trello](#project-management-tool)
+    - [Google Slide Presentation](#presentation)
+    - [Wireframe](#wireframe)
+    - [Domain Model](#domain-model)
+    - [Deployed Server](#deployed-server)
 
 3. [Group Members](#group-members)
 
@@ -28,6 +32,8 @@ Conversation Chat Agent
 8. [Git Process](#git-process)
 
 9. [License](#license)
+
+10. [Software Requirements](#software-requirements)
 
 <!-- 10. []() -->
 
@@ -76,6 +82,29 @@ Conversation Chat Agent
 
 - Trello:
     <https://trello.com/b/VMaHVS8C/project-management>
+
+### Presentation
+
+- Google Slide
+    <https://docs.google.com/presentation/d/1kQL9hGLRg37anI2xKxsoM6fG4cHLjosINz9mrw8o2oU/edit?usp=sharing>
+
+### Wireframe
+
+![Warmseat Wireframe](assets/warmseatWF.png)
+
+### Domain Model
+
+![Warmseat Domain Model](assets/warmseatDM.png)
+
+### Deployed Server
+
+- Backend
+
+    <https://warmseat-backend.onrender.com/queryvideo>
+
+- Frontend
+
+<!-- frontend link here -->
 
 ## Group Members
 
@@ -169,6 +198,14 @@ Conversation Chat Agent
     - `Main` > `Staging` > `Local`. Everything will be located collectively on each team member's laptop, and when ready will be sent to a staging branch for review before being merged into main.
 
 4. Will you be using a PR review workflow? If so, consider:
+*  How many people must review a PR?
+- We are going to have 1 people review.
+* Who merges PRs?
+- Whoever is the last to approve the PR.
+* How often will you merge?
+- Once we’ve successfully implemented any features then we will ACP and merge.
+* How will you communicate that it’s time to merge?
+- We will discuss what we’ve gotten done and make sure there are no conflicts, and once we collectively agree will merge.
 
 - How many people must review a PR?
   - We are going to have 1 people review.
@@ -185,3 +222,8 @@ Conversation Chat Agent
 ## License
 
 This project is licensed under the [License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Software Requirements
+
+For a detailed understanding of the software requirements, please refer to the [requirements.md](requirements.md) file.
+The "requirements.md" file contains essential information about the project's vision, scope, minimum viable product, stretch goals, functional and non-functional requirements, and more.
