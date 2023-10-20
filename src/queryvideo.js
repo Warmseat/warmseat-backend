@@ -66,6 +66,7 @@ async function handleQuery (queryObject){
 
   const email = 'fan3@sugaraspa.com'; 
   await saveData(email, youtubeURL, userQuery, queryResponse.text); 
+  console.log(`Processed ${youtubeURL} with query ${userQuery}`);
 
   return response;
 };

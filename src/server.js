@@ -1,6 +1,6 @@
 'use strict';
 
-const versionNumber = 'v0.9.9';
+const versionNumber = 'v0.9.91';
 
 // const CognitoExpress = require("cognito-express");
 
