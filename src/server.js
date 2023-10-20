@@ -73,3 +73,5 @@ module.exports = {
     });
   }
 };
+
+exports.module = app;
